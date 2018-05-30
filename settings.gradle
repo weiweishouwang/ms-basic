@@ -1,0 +1,5 @@
+rootProject.name = 'ms-basic'
+
+include 'eureka-service'
+include 'zuul-service'
+
