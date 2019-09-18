@@ -1,9 +1,10 @@
 group 'com.zhw.ms'
 version '1.0.0'
 
+
 buildscript {
     ext {
-        springBootVersion = '1.5.13.RELEASE'
+        springBootVersion = '2.1.4.RELEASE'
         artifactId = "EurekaServiceServer"
     }
     repositories {
@@ -11,12 +12,13 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion")
-        classpath "io.spring.gradle:dependency-management-plugin:0.5.6.RELEASE"
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.7.RELEASE"
     }
 }
 
-apply plugin: "io.spring.dependency-management"
-apply plugin: 'spring-boot'
+apply plugin: 'java'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.springframework.boot'
 apply plugin: 'idea'
 
 repositories {
